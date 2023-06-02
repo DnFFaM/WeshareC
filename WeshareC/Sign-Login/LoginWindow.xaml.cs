@@ -13,6 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WeshareC.InsideAppWindows;
 
 namespace WeshareC
 {
@@ -37,9 +38,8 @@ namespace WeshareC
 
             if (ValidateCredentials(UserName, Pass))
             {
-                // Navigate to the main application window or perform any other desired actions
-                MainWindow mainWindow = new MainWindow();
-                mainWindow.Show();
+                UserChoise userChoise = new UserChoise(UserName);
+                userChoise.Show();
                 Close();
             }
             else

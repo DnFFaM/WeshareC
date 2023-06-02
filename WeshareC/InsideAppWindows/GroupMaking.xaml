@@ -1,0 +1,27 @@
+﻿<Window x:Class="WeshareC.InsideAppWindows.GroupMaking"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeshareC.InsideAppWindows"
+        mc:Ignorable="d"
+        Title="GroupMaking" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Group Name:" />
+            <TextBox x:Name="txtGroupName" Width="200" Margin="0 5" />
+            <TextBlock Text="Person's Name:" />
+            <TextBox x:Name="txtPersonName" Width="200" Margin="0 5" />
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="Create Group" Width="100" Click="btnCreateGroup_Click" Margin="5" />
+                <Button Content="Add to Group" Width="100" Click="btnAddToGroup_Click" Margin="5" />
+            </StackPanel>
+
+            <TextBlock Text="Group Members:" />
+            <ListBox x:Name="lbGroupMembers" Width="200" Height="100" Margin="0 5"/>
+            <Button Content="Go Back" Width="100" Click="GoBack_Click" Margin="5" />
+            
+        </StackPanel>
+    </Grid>
+</Window>

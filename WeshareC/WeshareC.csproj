@@ -133,9 +133,30 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="InsideAppWindows\AddPurchaseWindow.xaml.cs">
+      <DependentUpon>AddPurchaseWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InsideAppWindows\GroupMaking.xaml.cs">
+      <DependentUpon>GroupMaking.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InsideAppWindows\UserChoise.xaml.cs">
+      <DependentUpon>UserChoise.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Sign-Login\SignUpWindow.xaml.cs">
       <DependentUpon>SignUpWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="InsideAppWindows\AddPurchaseWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InsideAppWindows\GroupMaking.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InsideAppWindows\UserChoise.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Sign-Login\LoginWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
