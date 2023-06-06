@@ -137,11 +137,11 @@ namespace WeshareC.InsideAppWindows
                 {
                     connection.Open();
 
-                    string query = "SELECT COUNT(*) FROM GroupData WHERE UserId = @Userid AND GroupName = @GroupName";
+                    string query = "SELECT COUNT(*) FROM GroupData WHERE UserName = @Username AND GroupName = @GroupName";
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
                         command.Parameters.AddWithValue("@GroupName", groupName);
-                        command.Parameters.AddWithValue("@Userid", username);
+                        command.Parameters.AddWithValue("@Username", username);
 
                         int count = (int)command.ExecuteScalar();
 
