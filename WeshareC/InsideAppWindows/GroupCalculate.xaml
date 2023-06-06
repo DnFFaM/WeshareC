@@ -1,0 +1,23 @@
+﻿<Window x:Class="WeshareC.InsideAppWindows.GroupCalculate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeshareC.InsideAppWindows"
+        mc:Ignorable="d"
+        Title="GroupMaking" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Select Group:" />
+            <ComboBox x:Name="groupNameComboBox" Width="200" Margin="0 5" SelectionChanged="groupNameComboBox_SelectionChanged" />
+
+            <TextBlock Text="Group Purchases:" />
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <TextBox x:Name="resultTextBox" Width="200" Height="100" Margin="0 5" IsReadOnly="True" />
+            </ScrollViewer>
+
+            <Button Content="Go Back" Width="100" Click="GoBack_Click" Margin="5" />
+        </StackPanel>
+
+    </Grid>
+</Window>

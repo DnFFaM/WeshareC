@@ -55,7 +55,13 @@ namespace WeshareC.InsideAppWindows
         }
         private void OtherFunction_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Other Function selected");
+            this.Close();
+
+            string userName = loggedInUserName;
+            SqlConnection sqlConnection = new SqlConnection(connectionString);
+
+            GroupCalculate addPurchaseWindow = new GroupCalculate(userName, sqlConnection);
+            addPurchaseWindow.Show();
         }
         private void Logout_Click(object sender, RoutedEventArgs e)
         {

@@ -61,3 +61,5 @@ C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\WeshareC.csproj.C
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\WeshareC.csproj.CopyComplete
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\WeshareC.exe
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\WeshareC.pdb
+C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\InsideAppWindows\GroupCalculate.g.cs
+C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\InsideAppWindows\GroupCalculate.baml

@@ -111,3 +111,4 @@
 --END;
 
 --DROP TRIGGER trg_UpdateUserIdGroups;
+SELECT DISTINCT GroupName FROM Purchases

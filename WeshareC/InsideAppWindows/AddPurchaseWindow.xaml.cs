@@ -38,24 +38,26 @@ namespace WeshareC.InsideAppWindows
 
             ReadAllGroups();
         }
-
         private void ReadAllGroups()
         {
             try
             {
-                connection.Open();
-
-                string query = "SELECT DISTINCT GroupName FROM Groups";
-                using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    using (SqlDataReader reader = command.ExecuteReader())
+                    connection.Open();
+
+                    string query = "SELECT DISTINCT GroupName FROM Groups";
+                    using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        while (reader.Read())
+                        using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            string groupName = reader.GetString(0);
-                            if (!cmbGroups.Items.Contains(groupName))
+                            while (reader.Read())
                             {
-                                cmbGroups.Items.Add(groupName);
+                                string groupName = reader.GetString(0);
+                                if (!cmbGroups.Items.Contains(groupName))
+                                {
+                                    cmbGroups.Items.Add(groupName);
+                                }
                             }
                         }
                     }
@@ -64,10 +66,6 @@ namespace WeshareC.InsideAppWindows
             catch (Exception ex)
             {
                 MessageBox.Show("Error loading groups: " + ex.Message);
-            }
-            finally
-            {
-                connection.Close();
             }
         }
         private void BtnAddPurchase_Click(object sender, RoutedEventArgs e)
@@ -81,45 +79,46 @@ namespace WeshareC.InsideAppWindows
                 MessageBox.Show("Invalid input. Please enter both item, price, and select a group.");
                 return;
             }
-
             try
             {
-                connection.Open();
-
-                // Check if the user is authorized to add a purchase to the selected group
-                if (!IsUserAuthorized(selectedGroup))
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    MessageBox.Show("You are not authorized to add a purchase to this group.");
-                    return;
-                }
-
-                string query = "INSERT INTO Purchases (UserName, GroupName, Item, Price) VALUES (@Username, @GroupName, @Item, @Price)";
-                using (SqlCommand command = new SqlCommand(query, connection))
-                {
-                    command.Parameters.AddWithValue("@Username", username);
-                    command.Parameters.AddWithValue("@GroupName", selectedGroup);
-                    command.Parameters.AddWithValue("@Item", item);
-
-                    // Convert the price value to decimal before inserting
-                    decimal priceValue;
-                    if (decimal.TryParse(txtPrice.Text.Replace(".", ","), out priceValue))
+                    connection.Open();
+                    // Check if the user is authorized to add a purchase to the selected group
+                    if (!IsUserAuthorized(selectedGroup))
                     {
-                        command.Parameters.AddWithValue("@Price", priceValue);
-                    }
-                    else
-                    {
-                        // Handle invalid price input
-                        MessageBox.Show("Invalid price format. Please enter a valid number.");
+                        MessageBox.Show("You are not authorized to add a purchase to this group.");
                         return;
                     }
 
-                    command.ExecuteNonQuery();
-                }
+                    string query = "INSERT INTO Purchases (UserName, GroupName, Item, Price) VALUES (@Username, @GroupName, @Item, @Price)";
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Username", username);
+                        command.Parameters.AddWithValue("@GroupName", selectedGroup);
+                        command.Parameters.AddWithValue("@Item", item);
 
-                MessageBox.Show("Purchase added successfully.");
-                txtItem.Clear();
-                txtPrice.Clear();
-                cmbGroups.SelectedIndex = -1;
+                        // Convert the price value to decimal before inserting
+                        decimal priceValue;
+                        if (decimal.TryParse(txtPrice.Text.Replace(".", ","), out priceValue))
+                        {
+                            command.Parameters.AddWithValue("@Price", priceValue);
+                        }
+                        else
+                        {
+                            // Handle invalid price input
+                            MessageBox.Show("Invalid price format. Please enter a valid number.");
+                            return;
+                        }
+
+                        command.ExecuteNonQuery();
+                    }
+
+                    MessageBox.Show("Purchase added successfully.");
+                    txtItem.Clear();
+                    txtPrice.Clear();
+                    cmbGroups.SelectedIndex = -1;
+                }
             }
             catch (Exception ex)
             {
@@ -130,19 +129,19 @@ namespace WeshareC.InsideAppWindows
                 connection.Close();
             }
         }
-        private bool IsUserAuthorized(string GroupName)
+        private bool IsUserAuthorized(string groupName)
         {
             try
             {
-                using (connection)
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
 
-                    string query = "SELECT COUNT(*) FROM GroupData WHERE UserName = @Username AND GroupName = @GroupName";
+                    string query = "SELECT COUNT(*) FROM GroupData WHERE UserId = @Userid AND GroupName = @GroupName";
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@Username", username);
-                        command.Parameters.AddWithValue("@GroupName", GroupName);
+                        command.Parameters.AddWithValue("@GroupName", groupName);
+                        command.Parameters.AddWithValue("@Userid", username);
 
                         int count = (int)command.ExecuteScalar();
 

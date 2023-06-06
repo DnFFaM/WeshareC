@@ -136,6 +136,9 @@
     <Compile Include="InsideAppWindows\AddPurchaseWindow.xaml.cs">
       <DependentUpon>AddPurchaseWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="InsideAppWindows\GroupCalculate.xaml.cs">
+      <DependentUpon>GroupCalculate.xaml</DependentUpon>
+    </Compile>
     <Compile Include="InsideAppWindows\GroupMaking.xaml.cs">
       <DependentUpon>GroupMaking.xaml</DependentUpon>
     </Compile>
@@ -146,6 +149,10 @@
       <DependentUpon>SignUpWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="InsideAppWindows\AddPurchaseWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InsideAppWindows\GroupCalculate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

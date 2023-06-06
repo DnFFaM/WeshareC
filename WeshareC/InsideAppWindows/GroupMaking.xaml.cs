@@ -103,12 +103,6 @@ namespace WeshareC.InsideAppWindows
                 return;
             }
 
-            if (!IsUserInvited(userName, groupName))
-            {
-                MessageBox.Show("User is not invited to the group.");
-                return;
-            }
-
             if (UserExistsInGroup(userName, groupName))
             {
                 MessageBox.Show("User already exists in the group.");
@@ -143,7 +137,6 @@ namespace WeshareC.InsideAppWindows
                 MessageBox.Show("Error adding name to the group: " + ex.Message);
             }
         }
-
         private bool UserExists(string userName)
         {
             try
@@ -168,47 +161,6 @@ namespace WeshareC.InsideAppWindows
                 MessageBox.Show("Error checking user existence: " + ex.Message);
                 return false;
             }
-        }
-        private bool IsUserInvited(string userName, string groupName)
-        {
-            List<string> invitedUsers = GetInvitedUsersForGroup(groupName);
-
-            return invitedUsers.Contains(userName);
-        }
-
-        private List<string> GetInvitedUsersForGroup(string groupName)
-        {
-            List<string> invitedUsers = new List<string>();
-
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(connectionString))
-                {
-                    connection.Open();
-
-                    string selectQuery = "SELECT UserName FROM GroupData WHERE GroupName = @GroupName";
-
-                    using (SqlCommand command = new SqlCommand(selectQuery, connection))
-                    {
-                        command.Parameters.AddWithValue("@GroupName", groupName);
-
-                        using (SqlDataReader reader = command.ExecuteReader())
-                        {
-                            while (reader.Read())
-                            {
-                                string userName = reader.GetString(0);
-                                invitedUsers.Add(userName);
-                            }
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error retrieving invited users: " + ex.Message);
-            }
-
-            return invitedUsers;
         }
         private bool UserExistsInGroup(string userName, string groupName)
         {
