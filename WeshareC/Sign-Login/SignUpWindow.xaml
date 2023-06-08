@@ -5,17 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WeshareC"
         mc:Ignorable="d"
-        Title="SignUpWindow" Height="450" Width="800">
+        Title="SignUpWindow" Height="500" Width="900">
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Text="Username" />
-            <TextBox x:Name="txtUsername" Width="200" Margin="0 5" />
+            <TextBox x:Name="txtUsername" Width="350" Margin="0 5" />
             <TextBlock Text="Password" />
-            <PasswordBox x:Name="txtPassword" Width="200" Margin="0 5" />
+            <PasswordBox x:Name="txtPassword" Width="350" Margin="0 5" />
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button Content="Sign Up" Width="100" Click="btnSignUp_Click" Margin="5" />
-                <Button Content="Go Back" Width="100" Click="GoBack_Click" Margin="5" />
+                <Button Content="Sign Up" Width="200" Click="btnSignUp_Click" Margin="5" />
+                <Button Content="Go Back" Width="200" Click="GoBack_Click" Margin="5" />
             </StackPanel>
         </StackPanel>
     </Grid>

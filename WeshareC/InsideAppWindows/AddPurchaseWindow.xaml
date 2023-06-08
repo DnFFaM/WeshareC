@@ -5,20 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WeshareC.InsideAppWindows"
         mc:Ignorable="d"
-        Title="Add Purchase" Height="450" Width="800">
+        Title="Add Purchase" Height="500" Width="900">
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Text="Item:" />
-            <TextBox x:Name="txtItem" Width="200" Margin="0 5" />
+            <TextBox x:Name="txtItem" Width="359" Margin="0 5" />
             <TextBlock Text="Price:" />
-            <TextBox x:Name="txtPrice" Width="200" Margin="0 5" />
+            <TextBox x:Name="txtPrice" Width="350" Margin="0 5" />
 
             <TextBlock Text="Select Group:" />
-            <ComboBox x:Name="cmbGroups" Width="200" Margin="0 5" />
+            <ComboBox x:Name="cmbGroups" Width="350" Margin="0 5" />
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button Content="Add Purchase" Width="100" Click="BtnAddPurchase_Click" Margin="5" />
-                <Button Content="Go Back" Width="100" Click="GoBack_Click" Margin="5" />
+                <Button Content="Add Purchase" Width="200" Click="BtnAddPurchase_Click" Margin="5" />
+                <Button Content="Go Back" Width="200" Click="GoBack_Click" Margin="5" />
             </StackPanel>
         </StackPanel>
     </Grid>

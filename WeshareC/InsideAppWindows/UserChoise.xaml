@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WeshareC.InsideAppWindows"
         mc:Ignorable="d"
-        Title="UserChoise" Height="450" Width="800">
+        Title="UserChoise" Height="500" Width="900">
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Content="Create Group And Add to The Group" Width="150" Height="30" Margin="10" Click="CreateGroup_Click" />
-            <Button Content="Add Purchase to Group" Width="150" Height="30" Margin="10" Click="AddPurchase_Click" />
-            <Button Content="Group Calculate" Width="150" Height="30" Margin="10" Click="OtherFunction_Click" />
+            <Button Content="Create Group And Add to The Group" Width="300" Height="50" Margin="10" Click="CreateGroup_Click" />
+            <Button Content="Add Purchase to Group" Width="300" Height="50" Margin="10" Click="AddPurchase_Click" />
+            <Button Content="Group Calculate" Width="300" Height="50" Margin="10" Click="OtherFunction_Click" />
 
-            <Button Content="Logout" Width="150" Height="30" Margin="10" Click="Logout_Click" />
+            <Button Content="Logout" Width="300" Height="50" Margin="10" Click="Logout_Click" />
         </StackPanel>
     </Grid>
 </Window>

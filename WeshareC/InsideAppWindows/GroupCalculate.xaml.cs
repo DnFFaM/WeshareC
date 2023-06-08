@@ -139,11 +139,10 @@ namespace WeshareC.InsideAppWindows
                                 decimal averageExpense = totalExpenses / userExpenses.Count;
 
                                 StringBuilder resultBuilder = new StringBuilder();
-
-                                resultBuilder.AppendFormat("Total Expenses: {0:C}\n", totalExpenses);
-                                resultBuilder.AppendLine();
                                 resultBuilder.AppendLine("Purchases:");
                                 resultBuilder.Append(purchasesBuilder.ToString());
+                                resultBuilder.AppendLine();
+                                resultBuilder.AppendFormat("Total Expenses: {0:C}\n", totalExpenses);
                                 resultBuilder.AppendLine();
 
                                 Dictionary<string, decimal> payments = new Dictionary<string, decimal>();
@@ -192,7 +191,6 @@ namespace WeshareC.InsideAppWindows
                                     }
                                 }
 
-                                resultBuilder.AppendFormat("\nTotal Expenses: {0:C}\n", totalExpenses);
                                 resultTextBox.Text = resultBuilder.ToString();
                             }
                             else

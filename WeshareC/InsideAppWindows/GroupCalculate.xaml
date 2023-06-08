@@ -5,18 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WeshareC.InsideAppWindows"
         mc:Ignorable="d"
-        Title="GroupMaking" Height="450" Width="800">
+        Title="GroupMaking" Height="500" Width="900">
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Text="Select Group:" />
-            <ComboBox x:Name="groupNameComboBox" Width="200" Margin="0 5" SelectionChanged="groupNameComboBox_SelectionChanged" />
+            <ComboBox x:Name="groupNameComboBox" Width="350" Margin="0 5" SelectionChanged="groupNameComboBox_SelectionChanged" />
 
             <TextBlock Text="Group Purchases:" />
             <ScrollViewer VerticalScrollBarVisibility="Auto">
-                <TextBox x:Name="resultTextBox" Width="200" Height="100" Margin="0 5" IsReadOnly="True" />
+                <TextBox x:Name="resultTextBox" Width="350" Height="100" Margin="0 5" IsReadOnly="True" />
             </ScrollViewer>
 
-            <Button Content="Go Back" Width="100" Click="GoBack_Click" Margin="5" />
+            <Button Content="Go Back" Width="200" Click="GoBack_Click" Margin="5" />
         </StackPanel>
 
     </Grid>

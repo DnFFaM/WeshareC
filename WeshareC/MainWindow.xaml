@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WeshareC"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="500" Width="900">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
@@ -21,8 +21,8 @@
 
         <!-- Menu -->
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Content="Login" Width="100" Click="GoToLogin_Click" Margin="10" />
-            <Button Content="Sign Up" Width="100" Click="GoToSignUp_Click" Margin="10" />
+            <Button Content="Login" Width="200" Click="GoToLogin_Click" Margin="10" />
+            <Button Content="Sign Up" Width="200" Click="GoToSignUp_Click" Margin="10" />
         </StackPanel>
     </Grid>
 </Window>
