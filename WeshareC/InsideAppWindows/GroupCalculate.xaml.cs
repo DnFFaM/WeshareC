@@ -87,11 +87,11 @@ namespace WeshareC.InsideAppWindows
                     connection.Open();
 
                     // Check if the logged-in user's name is associated with the group in the GroupData table
-                    string checkUserQuery = "SELECT COUNT(*) FROM GroupData WHERE GroupName = @GroupName AND UserName = @LoggedInUserName";
+                    string checkUserQuery = "SELECT COUNT(*) FROM GroupData WHERE GroupName = @GroupName AND LOWER(UserName) = LOWER(@LoggedInUser)";
                     using (SqlCommand checkUserCommand = new SqlCommand(checkUserQuery, connection))
                     {
                         checkUserCommand.Parameters.AddWithValue("@GroupName", groupName);
-                        checkUserCommand.Parameters.AddWithValue("@LoggedInUserName", loggedInUserName);
+                        checkUserCommand.Parameters.AddWithValue("@LoggedInUser", loggedInUserName);
 
                         int userCount = (int)checkUserCommand.ExecuteScalar();
 
@@ -110,7 +110,7 @@ namespace WeshareC.InsideAppWindows
 
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            Dictionary<string, decimal> userExpenses = new Dictionary<string, decimal>();
+                            Dictionary<string, decimal> userExpenses = new Dictionary<string, decimal>(StringComparer.OrdinalIgnoreCase);
 
                             StringBuilder purchasesBuilder = new StringBuilder();
 
@@ -125,10 +125,37 @@ namespace WeshareC.InsideAppWindows
                                     // Display each purchase
                                     purchasesBuilder.AppendFormat("User: {0}, Item: {1}, Price: {2:C}\n", userName, itemName, price);
 
+                                    userName = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(userName.ToLower());
+
                                     if (userExpenses.ContainsKey(userName))
                                         userExpenses[userName] += price;
                                     else
                                         userExpenses[userName] = price;
+                                }
+                            }
+
+                            // Close the existing DataReader before executing the next query
+                            reader.Close();
+
+                            // Add users who haven't made any purchases
+                            string selectUsersQuery = "SELECT DISTINCT UserName FROM GroupData WHERE GroupName = @GroupName";
+                            using (SqlCommand selectUsersCommand = new SqlCommand(selectUsersQuery, connection))
+                            {
+                                selectUsersCommand.Parameters.AddWithValue("@GroupName", groupName);
+
+                                using (SqlDataReader userReader = selectUsersCommand.ExecuteReader())
+                                {
+                                    while (userReader.Read())
+                                    {
+                                        if (!userReader.IsDBNull(0))
+                                        {
+                                            string userName = userReader.GetString(0);
+                                            userName = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(userName.ToLower());
+
+                                            if (!userExpenses.ContainsKey(userName))
+                                                userExpenses[userName] = 0;
+                                        }
+                                    }
                                 }
                             }
 
@@ -145,7 +172,7 @@ namespace WeshareC.InsideAppWindows
                                 resultBuilder.AppendFormat("Total Expenses: {0:C}\n", totalExpenses);
                                 resultBuilder.AppendLine();
 
-                                Dictionary<string, decimal> payments = new Dictionary<string, decimal>();
+                                Dictionary<string, decimal> payments = new Dictionary<string, decimal>(StringComparer.OrdinalIgnoreCase);
 
                                 foreach (var kvp in userExpenses)
                                 {

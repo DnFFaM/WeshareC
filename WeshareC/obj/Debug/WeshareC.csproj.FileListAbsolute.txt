@@ -67,3 +67,5 @@ C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\bin\Debug\WeshareC.exe.mani
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\bin\Debug\WeshareC.application
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\WeshareC.exe.manifest
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\WeshareC.application
+C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\InsideAppWindows\DeletePurchase.g.cs
+C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\InsideAppWindows\DeletePurchase.baml

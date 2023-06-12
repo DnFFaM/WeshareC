@@ -20,7 +20,6 @@
 --);
 
 
-
 --CREATE TABLE GroupData (
 --    GroupID INT PRIMARY KEY IDENTITY,
 --    GroupName VARCHAR(50) NOT NULL
@@ -45,10 +44,6 @@
 
 --ALTER TABLE GroupData
 --ADD UserName NVARCHAR(25),
---ADD Item NVARCHAR(25),
---Price INT;
-
---INSERT INTO GroupData (GroupName, UserName) VALUES ('gr2', 'asad')
 
 
 --ALTER TABLE Purchases
@@ -100,14 +95,17 @@
 
 --CREATE TRIGGER trg_UpdateUserIdGroups
 --ON Groups
---AFTER INSERT, UPDATE
+--AFTER INSERT
 --AS
 --BEGIN
 --    UPDATE g
---    SET g.UserId = ui.id
---    FROM GroupData g
---    JOIN userinfo ui ON g.UserId = ui.Id
+--    SET g.UserId = ui.UserId
+--    FROM Groups g
+--    JOIN GroupData ui ON g.UserId = ui.UserId
 --    JOIN inserted ins ON g.GroupID = ins.GroupID;
 --END;
 
 --DROP TRIGGER trg_UpdateUserIdGroups;
+
+
+COLLATE SQL_Latin1_General_CP1_CI_AS

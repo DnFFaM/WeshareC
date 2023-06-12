@@ -53,7 +53,7 @@ namespace WeshareC
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-                string query = "SELECT COUNT(*) FROM UserInfo WHERE UserName = @Username AND Pass = @Password";
+                string query = "SELECT COUNT(*) FROM UserInfo WHERE LOWER(UserName) = LOWER(@Username) AND Pass = @Password COLLATE SQL_Latin1_General_CP1_CI_AS";
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@Username", UserName);
