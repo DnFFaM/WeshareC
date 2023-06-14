@@ -5,41 +5,66 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WeshareC.InsideAppWindows"
         mc:Ignorable="d"
-        Title="UserChoice" Height="500" Width="800" Background="#F3F4F6">
-    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        Title="UserChoice" WindowStartupLocation="CenterScreen">
+    <Grid Background="#F3F4F6">
         <ScrollViewer VerticalScrollBarVisibility="Auto">
-            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 10">
+            <StackPanel Margin="10" VerticalAlignment="Center">
                 <TextBlock x:Name="welcomeTextBlock" FontSize="32" FontWeight="Bold" Margin="0 10 0 15" HorizontalAlignment="Center" />
 
-                <StackPanel Margin="0 10" Orientation="Horizontal">
-                    <Image Source="\Icons\Plus-solid.png" Width="20" Height="20" Margin="0 0 5 0" />
-                    <TextBlock Text="Create Group" FontSize="16" />
-                </StackPanel>
-                <Button Content="Create Group" Width="300" Height="40" FontSize="16" Background="#2E86C1" Foreground="White" BorderBrush="#3498DB" BorderThickness="1" Margin="10" Click="CreateGroup_Click"/>
+                <Button Width="300" Height="40" FontSize="16" Background="#2E86C1" Foreground="White" BorderBrush="#3498DB" BorderThickness="1" Margin="10" Click="CreateGroup_Click">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="\Icons\Plus-solid.png" Width="20" Height="20" Margin="0 0 5 0" />
+                        <TextBlock Grid.Column="1" Text="Create Group" FontSize="16" VerticalAlignment="Center"/>
+                    </Grid>
+                </Button>
 
-                <StackPanel Margin="0 10" Orientation="Horizontal">
-                    <Image Source="\Icons\Cart-plus-solid.png" Width="20" Height="20" Margin="0 0 5 0" />
-                    <TextBlock Text="Add Purchase to Group" FontSize="16" />
-                </StackPanel>
-                <Button Content="Add Purchase to Group" Width="300" Height="40" FontSize="16" Background="#27AE60" Foreground="White" BorderBrush="#2ECC71" BorderThickness="1" Margin="10" Click="AddPurchase_Click"/>
+                <Button Width="300" Height="40" FontSize="16" Background="#27AE60" Foreground="White" BorderBrush="#2ECC71" BorderThickness="1" Margin="10" Click="AddPurchase_Click">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="\Icons\Cart-plus-solid.png" Width="20" Height="20" Margin="0 0 5 0" />
+                        <TextBlock Grid.Column="1" Text="Add Purchase to Group" FontSize="16" VerticalAlignment="Center"/>
+                    </Grid>
+                </Button>
 
-                <StackPanel Margin="0 10" Orientation="Horizontal">
-                    <Image Source="\Icons\Minus-solid.png" Width="20" Height="20" Margin="0 0 5 0" />
-                    <TextBlock Text="Delete Purchase" FontSize="16" />
-                </StackPanel>
-                <Button Content="Delete Purchase" Width="300" Height="40" FontSize="16" Background="#E74C3C" Foreground="White" BorderBrush="#C0392B" BorderThickness="1" Margin="10" Click="DeletePurchase_Click"/>
+                <Button Width="300" Height="40" FontSize="16" Background="#E74C3C" Foreground="White" BorderBrush="#C0392B" BorderThickness="1" Margin="10" Click="DeletePurchase_Click">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="\Icons\Minus-solid.png" Width="20" Height="20" Margin="0 0 5 0" />
+                        <TextBlock Grid.Column="1" Text="Delete Purchase" FontSize="16" VerticalAlignment="Center"/>
+                    </Grid>
+                </Button>
 
-                <StackPanel Margin="0 10" Orientation="Horizontal">
-                    <Image Source="\Icons\Calculator-solid.png" Width="20" Height="20" Margin="0 0 5 0" />
-                    <TextBlock Text="Group Calculate" FontSize="16" />
-                </StackPanel>
-                <Button Content="Group Calculate" Width="300" Height="40" FontSize="16" Background="#9B59B6" Foreground="White" BorderBrush="#8E44AD" BorderThickness="1" Margin="10" Click="OtherFunction_Click"/>
+                <Button Width="300" Height="40" FontSize="16" Background="#9B59B6" Foreground="White" BorderBrush="#8E44AD" BorderThickness="1" Margin="10" Click="OtherFunction_Click">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="\Icons\Calculator-solid.png" Width="20" Height="20" Margin="0 0 5 0" />
+                        <TextBlock Grid.Column="1" Text="Group Calculate" FontSize="16" VerticalAlignment="Center"/>
+                    </Grid>
+                </Button>
 
-                <StackPanel Margin="0 10" Orientation="Horizontal">
-                    <Image Source="\Icons\Right-from-bracket-solid.png" Width="20" Height="20" Margin="0 0 5 0" />
-                    <TextBlock Text="Logout" FontSize="16" />
-                </StackPanel>
-                <Button Content="Logout" Width="300" Height="40" FontSize="16" Background="#34495E" Foreground="White" BorderBrush="#2C3E50" BorderThickness="1" Margin="10" Click="Logout_Click"/>
+                <Button Width="300" Height="40" FontSize="16" Background="#34495E" Foreground="White" BorderBrush="#2C3E50" BorderThickness="1" Margin="10" Click="Logout_Click">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="\Icons\Right-from-bracket-solid.png" Width="20" Height="20" Margin="0 0 5 0" />
+                        <TextBlock Grid.Column="1" Text="Logout" FontSize="16" VerticalAlignment="Center"/>
+                    </Grid>
+                </Button>
             </StackPanel>
         </ScrollViewer>
     </Grid>
