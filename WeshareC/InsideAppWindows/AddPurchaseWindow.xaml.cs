@@ -91,10 +91,10 @@ namespace WeshareC.InsideAppWindows
                         return;
                     }
 
-                    string query = "INSERT INTO Purchases (UserName, GroupName, Item, Price) VALUES ((SELECT UserName FROM UserInfo WHERE LOWER(UserName) = LOWER(@UserName)), @GroupName, @Item, @Price)";
+                    string query = "INSERT INTO Purchases (UserName, GroupName, Item, Price) VALUES (@Username, @GroupName, @Item, @Price)";
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@UserName", loggedInUserName);
+                        command.Parameters.AddWithValue("@Username", username);
                         command.Parameters.AddWithValue("@GroupName", selectedGroup);
                         command.Parameters.AddWithValue("@Item", item);
 
@@ -137,11 +137,11 @@ namespace WeshareC.InsideAppWindows
                 {
                     connection.Open();
 
-                    string query = "SELECT COUNT(*) FROM GroupData WHERE LOWER(UserName) = LOWER(@UserName) AND GroupName = @GroupName";
+                    string query = "SELECT COUNT(*) FROM GroupData WHERE UserName = @Username AND GroupName = @GroupName";
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
                         command.Parameters.AddWithValue("@GroupName", groupName);
-                        command.Parameters.AddWithValue("@UserName", username.ToLower());
+                        command.Parameters.AddWithValue("@Username", username);
 
                         int count = (int)command.ExecuteScalar();
 

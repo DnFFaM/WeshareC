@@ -15,7 +15,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\ada\Documents\SQL Project\WeshareCPublish\</PublishUrl>
+    <PublishUrl>C:\Users\ada\Documents\SQL Project\WeshareC\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -25,7 +25,8 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>3</ApplicationRevision>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -164,9 +165,6 @@
     <Compile Include="InsideAppWindows\AddPurchaseWindow.xaml.cs">
       <DependentUpon>AddPurchaseWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="InsideAppWindows\DeletePurchase.xaml.cs">
-      <DependentUpon>DeletePurchase.xaml</DependentUpon>
-    </Compile>
     <Compile Include="InsideAppWindows\GroupCalculate.xaml.cs">
       <DependentUpon>GroupCalculate.xaml</DependentUpon>
     </Compile>
@@ -180,10 +178,6 @@
       <DependentUpon>SignUpWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="InsideAppWindows\AddPurchaseWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="InsideAppWindows\DeletePurchase.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
