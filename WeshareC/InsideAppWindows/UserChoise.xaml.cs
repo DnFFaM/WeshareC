@@ -14,6 +14,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using WeshareC.InsideAppWindows;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 
 namespace WeshareC.InsideAppWindows
@@ -32,6 +34,7 @@ namespace WeshareC.InsideAppWindows
             connectionString = configuration.GetConnectionString("MyConnectionString");
 
             loggedInUserName = userName;
+            welcomeTextBlock.Text = $"Welcome, {loggedInUserName}!";
         }
         private void CreateGroup_Click(object sender, RoutedEventArgs e)
         {
@@ -50,8 +53,18 @@ namespace WeshareC.InsideAppWindows
             string userName = loggedInUserName;
             SqlConnection sqlConnection = new SqlConnection(connectionString);
 
-            AddPurchaseWindow addPurchaseWindow= new AddPurchaseWindow(userName, sqlConnection);
+            AddPurchaseWindow addPurchaseWindow = new AddPurchaseWindow(userName, sqlConnection);
             addPurchaseWindow.Show();
+        }
+        private void DeletePurchase_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+
+            string userName = loggedInUserName;
+            SqlConnection sqlConnection = new SqlConnection(connectionString);
+
+            DeletePurchase deletePurchase = new DeletePurchase(userName, sqlConnection);
+            deletePurchase.Show();
         }
         private void OtherFunction_Click(object sender, RoutedEventArgs e)
         {

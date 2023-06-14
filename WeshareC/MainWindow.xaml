@@ -5,24 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WeshareC"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="900">
-    <Grid>
+        Title="MainWindow" Height="500" Width="800">
+    <Grid Background="#F3F4F6">
         <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
         <!-- Welcome Message -->
-        <TextBlock Grid.Row="0" Text="Welcome to the app! Please choose an option:" FontWeight="Bold" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <TextBlock Grid.Row="0" Text="Welcome to the App!" FontWeight="Bold" FontSize="30" Margin="0 50" HorizontalAlignment="Center" />
 
         <!-- Content Placeholder -->
-        <ContentControl Grid.Row="1" x:Name="contentControl" />
+        <ContentControl Grid.Row="1" x:Name="contentControl" HorizontalAlignment="Center" VerticalAlignment="Center" />
 
         <!-- Menu -->
-        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Content="Login" Width="200" Click="GoToLogin_Click" Margin="10" />
-            <Button Content="Sign Up" Width="200" Click="GoToSignUp_Click" Margin="10" />
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 30">
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Image Source="C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\Icons\arrow-right-to-bracket-solid.png" Width="20" Height="20" Margin="0 0 5 0" />
+                <Button Content="Login" Width="150" Height="50" FontSize="18" Background="#2E86C1" Foreground="White" BorderBrush="#3498DB" BorderThickness="1" Click="GoToLogin_Click" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Image Source="C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\Icons\user-plus-solid.png" Width="20" Height="20" Margin="0 0 5 0" />
+                <Button Content="Sign Up" Width="150" Height="50" FontSize="18" Background="#27AE60" Foreground="White" BorderBrush="#2ECC71" BorderThickness="1" Click="GoToSignUp_Click" />
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Window>

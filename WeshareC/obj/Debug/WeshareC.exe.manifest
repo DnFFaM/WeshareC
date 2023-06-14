@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="WeshareC.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="WeshareC.exe" version="1.0.0.4" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="WeshareC" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -246,24 +246,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WeshareC.exe" size="39880">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WeshareC.exe" size="112072">
       <assemblyIdentity name="WeshareC" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>bjjBcomMMIBPzIhQs7H7I3YlzVhww3kpiCcmeLF/m/I=</dsig:DigestValue>
+        <dsig:DigestValue>0kYGzzwQBZTFxECcb/GJ9ssCzBQ8CtJh2bZXy8prZus=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="appsettings.json" size="172">
+  <file name="appsettings.json" size="278">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>ivoNclk0iXU4cz0nQ+gJsBFVYGdEbGBbM2Q7S1OgCWw=</dsig:DigestValue>
+      <dsig:DigestValue>Vg7yaU+kzi1j2F+IR52a1gbK7DA25XKa/gnXc6z+m6I=</dsig:DigestValue>
     </hash>
   </file>
   <file name="WeshareC.exe.config" size="996">

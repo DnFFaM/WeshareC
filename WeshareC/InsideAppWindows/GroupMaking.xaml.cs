@@ -69,11 +69,11 @@ namespace WeshareC.InsideAppWindows
                     }
 
                     // Create the group
-                    string query = "INSERT INTO GroupData (GroupName, UserName) VALUES (@GroupName, @Username)";
+                    string query = "INSERT INTO GroupData (GroupName, UserName) VALUES (@GroupName, @UserName)";
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
                         command.Parameters.AddWithValue("@GroupName", groupName);
-                        command.Parameters.AddWithValue("@Username", username);
+                        command.Parameters.AddWithValue("@UserName", username);
 
                         command.ExecuteNonQuery();
                         MessageBox.Show("Group created successfully.");

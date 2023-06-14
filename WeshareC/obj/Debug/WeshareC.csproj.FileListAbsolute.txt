@@ -1,5 +1,7 @@
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\bin\Debug\appsettings.json
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\bin\Debug\WeshareC.exe.config
+C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\bin\Debug\WeshareC.exe.manifest
+C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\bin\Debug\WeshareC.application
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\bin\Debug\WeshareC.exe
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\bin\Debug\WeshareC.pdb
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
@@ -39,6 +41,8 @@ C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\bin\Debug\System.ValueTuple
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\WeshareC.csproj.AssemblyReference.cache
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\WeshareC.csproj.SuggestedBindingRedirects.cache
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\InsideAppWindows\AddPurchaseWindow.g.cs
+C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\InsideAppWindows\DeletePurchase.g.cs
+C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\InsideAppWindows\GroupCalculate.g.cs
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\InsideAppWindows\GroupMaking.g.cs
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\InsideAppWindows\UserChoise.g.cs
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\Sign-Login\LoginWindow.g.cs
@@ -49,6 +53,8 @@ C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\WeshareC_Content.
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\WeshareC_MarkupCompile.cache
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\WeshareC_MarkupCompile.lref
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\InsideAppWindows\AddPurchaseWindow.baml
+C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\InsideAppWindows\DeletePurchase.baml
+C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\InsideAppWindows\GroupCalculate.baml
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\InsideAppWindows\GroupMaking.baml
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\InsideAppWindows\UserChoise.baml
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\Sign-Login\LoginWindow.baml
@@ -58,12 +64,8 @@ C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\WeshareC.g.resour
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\WeshareC.Properties.Resources.resources
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\WeshareC.csproj.GenerateResource.cache
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\WeshareC.csproj.CoreCompileInputs.cache
+C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\WeshareC.exe.manifest
+C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\WeshareC.application
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\WeshareC.csproj.CopyComplete
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\WeshareC.exe
 C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\WeshareC.pdb
-C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\InsideAppWindows\GroupCalculate.g.cs
-C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\InsideAppWindows\GroupCalculate.baml
-C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\bin\Debug\WeshareC.exe.manifest
-C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\bin\Debug\WeshareC.application
-C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\WeshareC.exe.manifest
-C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\obj\Debug\WeshareC.application
