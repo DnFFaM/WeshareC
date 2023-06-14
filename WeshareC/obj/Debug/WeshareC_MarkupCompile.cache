@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\ada\Documents\Projects\WeshareC\WeshareC\obj\Debug\
+C:\Users\ada\source\repos\WeshareC\WeshareC\obj\Debug\
 WeshareC
 none
 false
 DEBUG;TRACE
-C:\Users\ada\Documents\Projects\WeshareC\WeshareC\App.xaml
+C:\Users\ada\source\repos\WeshareC\WeshareC\App.xaml
 8849069289
 12106334408
-13116983642
-135-409444776
+12-1804794479
+135-645147188
 InsideAppWindows\AddPurchaseWindow.xaml;InsideAppWindows\DeletePurchase.xaml;InsideAppWindows\GroupCalculate.xaml;InsideAppWindows\GroupMaking.xaml;InsideAppWindows\UserChoise.xaml;Sign-Login\LoginWindow.xaml;MainWindow.xaml;Sign-Login\SignUpWindow.xaml;
 
-True
+False
 

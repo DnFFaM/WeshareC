@@ -23,7 +23,7 @@
             </StackPanel>
             <Button Width="200" Height="40" FontSize="14" Background="#E74C3C" Foreground="White" BorderBrush="#3498DB" BorderThickness="1" Margin="5" Click="GoBack_Click" >
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\Icons\Right-from-bracket-solid.png" Width="20" Height="20" Margin="5 0" />
+                    <Image Source="\Icons\Right-from-bracket-solid.png" Width="20" Height="20" Margin="5 0" />
                     <TextBlock Grid.Column="1" Text="Go Back" FontSize="14" VerticalAlignment="Center" />
                 </StackPanel>
             </Button>

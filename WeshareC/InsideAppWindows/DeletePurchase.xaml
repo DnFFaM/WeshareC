@@ -24,13 +24,13 @@
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 20" >
                     <Button Width="200" Height="40" Background="#2E86C1" Foreground="White" BorderBrush="#C0392B" BorderThickness="1" Margin="5" Click="BtnDeletePurchases_Click" >
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\Icons\minus-solid.png" Width="20" Height="20" Margin="5 0" />
+                            <Image Source="\Icons\minus-solid.png" Width="20" Height="20" Margin="5 0" />
                             <TextBlock Grid.Column="1" Text="Delete Selected Purchases" FontSize="13" VerticalAlignment="Center" />
                         </StackPanel>
                     </Button>
                     <Button Width="200" Height="40" FontSize="14" Background="#E74C3C" Foreground="White" BorderBrush="#3498DB" BorderThickness="1" Margin="5" Click="GoBack_Click" >
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\Icons\Right-from-bracket-solid.png" Width="20" Height="20" Margin="5 0" />
+                            <Image Source="\Icons\Right-from-bracket-solid.png" Width="20" Height="20" Margin="5 0" />
                             <TextBlock Grid.Column="1" Text="Go Back" FontSize="14" VerticalAlignment="Center" />
                         </StackPanel>
                     </Button>

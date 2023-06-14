@@ -22,11 +22,11 @@
         <!-- Menu -->
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 30">
             <StackPanel Orientation="Horizontal" Margin="10">
-                <Image Source="C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\Icons\arrow-right-to-bracket-solid.png" Width="20" Height="20" Margin="0 0 5 0" />
+                <Image Source="\Icons\arrow-right-to-bracket-solid.png" Width="20" Height="20" Margin="0 0 5 0" />
                 <Button Content="Login" Width="150" Height="50" FontSize="18" Background="#2E86C1" Foreground="White" BorderBrush="#3498DB" BorderThickness="1" Click="GoToLogin_Click" />
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="10">
-                <Image Source="C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\Icons\user-plus-solid.png" Width="20" Height="20" Margin="0 0 5 0" />
+                <Image Source="\Icons\user-plus-solid.png" Width="20" Height="20" Margin="0 0 5 0" />
                 <Button Content="Sign Up" Width="150" Height="50" FontSize="18" Background="#27AE60" Foreground="White" BorderBrush="#2ECC71" BorderThickness="1" Click="GoToSignUp_Click" />
             </StackPanel>
         </StackPanel>

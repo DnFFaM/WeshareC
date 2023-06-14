@@ -1,5 +1,0 @@
-﻿{
-  "ConnectionStrings": {
-    "MyConnectionString": "Data Source=x13.database.windows.net;Initial Catalog=WeShareC;User ID=amin;Password=Passw0rd;Connect Timeout=60;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;"
-  }
-}

@@ -24,13 +24,13 @@
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 20">
                     <Button Width="150" Height="40" FontSize="14" Margin="5" Click="btnCreateGroup_Click" Background="#2E86C1" Foreground="White">
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\Icons\plus-solid.png" Width="20" Height="20" Margin="0 0 5 0" />
+                            <Image Source="\Icons\plus-solid.png" Width="20" Height="20" Margin="0 0 5 0" />
                             <TextBlock Text="Create Group" FontSize="16" />
                         </StackPanel>
                     </Button>
                     <Button Width="150" Height="40" FontSize="14" Margin="5" Click="btnAddToGroup_Click" Background="#2E86C1" Foreground="White">
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\Icons\user-plus-solid.png" Width="20" Height="20" Margin="0 0 5 0" />
+                            <Image Source="\Icons\user-plus-solid.png" Width="20" Height="20" Margin="0 0 5 0" />
                             <TextBlock Text="Add to Group" FontSize="16" />
                         </StackPanel>
                     </Button>
@@ -41,7 +41,7 @@
                         <ColumnDefinition Width="Auto" />
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-                    <Image Source="C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\Icons\people-group-solid.png" Width="20" Height="20" Margin="0 0 5 0" />
+                    <Image Source="\Icons\people-group-solid.png" Width="20" Height="20" Margin="0 0 5 0" />
                     <TextBlock Grid.Column="1" Text="Group Members:" FontSize="16" />
                 </Grid>
 
@@ -52,7 +52,7 @@
                             <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
-                        <Image Source="C:\Users\ada\Documents\SQL Project\WeshareC\WeshareC\Icons\Right-from-bracket-solid.png" Width="20" Height="20" Margin="0 0 5 0" />
+                        <Image Source="\Icons\Right-from-bracket-solid.png" Width="20" Height="20" Margin="0 0 5 0" />
                         <TextBlock Grid.Column="1" Text="Go Back" FontSize="16" VerticalAlignment="Center" />
                     </Grid>
                 </Button>
