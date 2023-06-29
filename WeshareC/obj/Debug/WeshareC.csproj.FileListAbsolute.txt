@@ -112,6 +112,7 @@ C:\Users\ada\source\repos\WeshareC\WeshareC\bin\Debug\System.ValueTuple.xml
 C:\Users\ada\source\repos\WeshareC\WeshareC\obj\Debug\WeshareC.csproj.AssemblyReference.cache
 C:\Users\ada\source\repos\WeshareC\WeshareC\obj\Debug\WeshareC.csproj.SuggestedBindingRedirects.cache
 C:\Users\ada\source\repos\WeshareC\WeshareC\obj\Debug\InsideAppWindows\AddPurchaseWindow.g.cs
+C:\Users\ada\source\repos\WeshareC\WeshareC\obj\Debug\InsideAppWindows\DeleteGroup.g.cs
 C:\Users\ada\source\repos\WeshareC\WeshareC\obj\Debug\InsideAppWindows\DeletePurchase.g.cs
 C:\Users\ada\source\repos\WeshareC\WeshareC\obj\Debug\InsideAppWindows\GroupCalculate.g.cs
 C:\Users\ada\source\repos\WeshareC\WeshareC\obj\Debug\InsideAppWindows\GroupMaking.g.cs
@@ -124,6 +125,7 @@ C:\Users\ada\source\repos\WeshareC\WeshareC\obj\Debug\WeshareC_Content.g.cs
 C:\Users\ada\source\repos\WeshareC\WeshareC\obj\Debug\WeshareC_MarkupCompile.cache
 C:\Users\ada\source\repos\WeshareC\WeshareC\obj\Debug\WeshareC_MarkupCompile.lref
 C:\Users\ada\source\repos\WeshareC\WeshareC\obj\Debug\InsideAppWindows\AddPurchaseWindow.baml
+C:\Users\ada\source\repos\WeshareC\WeshareC\obj\Debug\InsideAppWindows\DeleteGroup.baml
 C:\Users\ada\source\repos\WeshareC\WeshareC\obj\Debug\InsideAppWindows\DeletePurchase.baml
 C:\Users\ada\source\repos\WeshareC\WeshareC\obj\Debug\InsideAppWindows\GroupCalculate.baml
 C:\Users\ada\source\repos\WeshareC\WeshareC\obj\Debug\InsideAppWindows\GroupMaking.baml
@@ -140,5 +142,3 @@ C:\Users\ada\source\repos\WeshareC\WeshareC\obj\Debug\WeshareC.application
 C:\Users\ada\source\repos\WeshareC\WeshareC\obj\Debug\WeshareC.csproj.CopyComplete
 C:\Users\ada\source\repos\WeshareC\WeshareC\obj\Debug\WeshareC.exe
 C:\Users\ada\source\repos\WeshareC\WeshareC\obj\Debug\WeshareC.pdb
-C:\Users\ada\source\repos\WeshareC\WeshareC\obj\Debug\InsideAppWindows\DeleteGroup.g.cs
-C:\Users\ada\source\repos\WeshareC\WeshareC\obj\Debug\InsideAppWindows\DeleteGroup.baml
