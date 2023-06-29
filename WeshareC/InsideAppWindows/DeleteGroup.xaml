@@ -1,0 +1,48 @@
+﻿<Window x:Class="WeshareC.InsideAppWindows.DeleteGroup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeshareC.InsideAppWindows"
+        mc:Ignorable="d"
+        Title="Delete Group" WindowStartupLocation="CenterScreen">
+    <Grid Background="#F3F4F6">
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 40">
+                <TextBlock Text="Delete Purchase" FontSize="34" FontWeight="Bold" Margin="0 0 0 20" HorizontalAlignment="Center" />
+
+                <StackPanel Margin="0 10" HorizontalAlignment="Center">
+                    <TextBlock Text="Select Group:" FontSize="16" />
+                    <ComboBox x:Name="cmbGroups" Width="350" Height="40" Margin="0 5" FontSize="14" BorderThickness="1" BorderBrush="#D1D5DB"/>
+                </StackPanel>
+
+                <StackPanel Margin="0 10" HorizontalAlignment="Center">
+                    <CheckBox x:Name="chkDeleteWholeGroup" Content="Delete whole group" FontSize="16" Margin="0 5" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 20">
+                    <Button Width="150" Height="40" Background="#2E86C1" Foreground="White" BorderBrush="#C0392B" BorderThickness="1" Margin="5" Click="BtnDeleteGroup_Click" >
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="\Icons\minus-solid.png" Width="20" Height="20" Margin="5 0" />
+                            <TextBlock Grid.Column="1" Text="Delete Purchase" FontSize="13" VerticalAlignment="Center" />
+                        </Grid>
+                    </Button>
+                    <Button Width="150" Height="40" FontSize="14" Background="#E74C3C" Foreground="White" BorderBrush="#3498DB" BorderThickness="1" Margin="5" Click="GoBack_Click" >
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="\Icons\Right-from-bracket-solid.png" Width="20" Height="20" Margin="5 0" />
+                            <TextBlock Grid.Column="1" Text="Go Back" FontSize="14" VerticalAlignment="Center" />
+                        </Grid>
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

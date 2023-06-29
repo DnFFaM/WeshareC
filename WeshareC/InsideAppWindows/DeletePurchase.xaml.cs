@@ -21,9 +21,9 @@ namespace WeshareC.InsideAppWindows
     public partial class DeletePurchase : Window
     {
         private readonly string connectionString;
-        private SqlConnection connection;
-        private string loggedInUserName;
-        private string userName;
+        private readonly SqlConnection connection;
+        private readonly string loggedInUserName;
+        private readonly string userName;
 
         public DeletePurchase(string userName, SqlConnection sqlConnection)
         {

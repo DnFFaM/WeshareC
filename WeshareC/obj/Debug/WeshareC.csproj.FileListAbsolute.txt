@@ -140,3 +140,5 @@ C:\Users\ada\source\repos\WeshareC\WeshareC\obj\Debug\WeshareC.application
 C:\Users\ada\source\repos\WeshareC\WeshareC\obj\Debug\WeshareC.csproj.CopyComplete
 C:\Users\ada\source\repos\WeshareC\WeshareC\obj\Debug\WeshareC.exe
 C:\Users\ada\source\repos\WeshareC\WeshareC\obj\Debug\WeshareC.pdb
+C:\Users\ada\source\repos\WeshareC\WeshareC\obj\Debug\InsideAppWindows\DeleteGroup.g.cs
+C:\Users\ada\source\repos\WeshareC\WeshareC\obj\Debug\InsideAppWindows\DeleteGroup.baml

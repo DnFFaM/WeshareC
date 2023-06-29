@@ -246,24 +246,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WeshareC.exe" size="112072">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WeshareC.exe" size="117704">
       <assemblyIdentity name="WeshareC" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>SYcPiisdJOXeHVppA7enCOANkEvJCErKHgLjW4xDtN0=</dsig:DigestValue>
+        <dsig:DigestValue>DeXoP4adZfVntT1k0qT7o3GiZaBt7LMwf/dA6+FvX6c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="appsettings.json" size="278">
+  <file name="appsettings.json" size="295">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Vg7yaU+kzi1j2F+IR52a1gbK7DA25XKa/gnXc6z+m6I=</dsig:DigestValue>
+      <dsig:DigestValue>7Iwt/uZpig26yiFuXff1uOsusfA3GhG3RpkpmPFCni0=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Properties\salary.ico" size="35852">

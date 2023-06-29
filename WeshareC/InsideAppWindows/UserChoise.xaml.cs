@@ -23,7 +23,7 @@ namespace WeshareC.InsideAppWindows
     public partial class UserChoise : Window
     {
         private readonly string connectionString;
-        private string loggedInUserName;
+        private readonly string loggedInUserName;
         public UserChoise(string userName)
         {
             InitializeComponent();
@@ -65,6 +65,16 @@ namespace WeshareC.InsideAppWindows
 
             DeletePurchase deletePurchase = new DeletePurchase(userName, sqlConnection);
             deletePurchase.Show();
+        }
+        private void DeleteGroup_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+
+            string userName = loggedInUserName;
+            SqlConnection sqlConnection = new SqlConnection(connectionString);
+
+            DeleteGroup deleteGroup = new DeleteGroup(userName, sqlConnection);
+            deleteGroup.Show();
         }
         private void OtherFunction_Click(object sender, RoutedEventArgs e)
         {
